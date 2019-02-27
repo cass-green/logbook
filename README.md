@@ -150,11 +150,11 @@ Starting with version 2.0 Logbook now comes with a [Strategy pattern](https://en
 at its core. Make sure you read the documentation of the [`Strategy`](logbook-api/src/main/java/org/zalando/logbook/Strategy.java)
 interface to understand the implications.
 
-Some example implementations can be found here:
+Logbook comes with some built-in strategies:
 
-- [`BodyOnlyIfErrorStrategy`](logbook-core/src/test/java/org/zalando/logbook/BodyOnlyIfErrorStrategy.java)
-- [`ErrorResponseOnlyStrategy`](logbook-core/src/test/java/org/zalando/logbook/ErrorResponseOnlyStrategy.java)
-- [`WithoutBodyStrategy`](logbook-core/src/test/java/org/zalando/logbook/WithoutBodyStrategy.java)
+- [`BodyOnlyIfStatusAtLeastStrategy`](logbook-core/src/main/java/org/zalando/logbook/BodyOnlyIfStatusAtLeastStrategy.java)
+- [`StatusAtLeastStrategy`](logbook-core/src/main/java/org/zalando/logbook/StatusAtLeastStrategy.java)
+- [`WithoutBodyStrategy`](logbook-core/src/main/java/org/zalando/logbook/WithoutBodyStrategy.java)
 
 ### Phases
 
